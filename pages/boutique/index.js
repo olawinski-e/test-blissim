@@ -9,7 +9,7 @@ const useStyles = theme => ({
     },
     filterTitle: {
         backgroundColor: theme.palette.primary,
-        color: theme.palette.light
+        color: theme.palette.primary.main
     },
     filterListItem: {
         paddingLeft: 0,
