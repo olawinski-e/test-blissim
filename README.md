@@ -1,4 +1,4 @@
-### Getting Started
+## Getting Started
 
 Repo link : https://github.com/BirchboxFR/technical-test-front
 
@@ -19,7 +19,7 @@ npm run dev
 yarn dev
 ```
 
-Pay attention to your node version.
+Pay attention to your node (v16) and Npm (v6) version
 
 Open [http://localhost:3000](~http://localhost:3000~) with your browser to see the result.
 
@@ -37,11 +37,10 @@ You can choose between two exercices :
 - user can see products by category and access them on url /boutique/[category]
 - categories in side menu have to be displayed dynamically (from api call)
 - products have to be displayed and filtered dynamically (from api call)
+#### You can use the api https://fakestoreapi.com/
 
-You can use the api https://fakestoreapi.com/
-
-Remember this is a frontend job offer, pay attention to UI and UX.
-We’ve left some UI mistakes, find them and fix them 🙂
+#### Remember this is a frontend job offer, pay attention to UI and UX.
+#### We’ve left some UI mistakes, find them and fix them 🙂
 
 ## Learn More
 
