@@ -41,13 +41,11 @@ export class GlobalProvider extends Component {
 
     removeProductToCart(id, callback) {
         const newCart = [...this.state.cart]
-        const ProductIndex = newCart.indexOf(p =>{
-            p.id === id
-        });
+        const ProductIndex = newCart.findIndex(p => p.id === id);
+        console.log({ProductIndex, newCart, id})
         newCart.splice(ProductIndex, 1)
         this.setState({ cart: newCart }, () => {
             sessionStorage.setItem('cart', JSON.stringify(newCart));
-
             if (typeof callback !== 'undefined') callback();
         });
     }
