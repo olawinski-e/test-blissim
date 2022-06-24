@@ -8,7 +8,7 @@ cd technical-test-front/
 
 npm install
 # or
-yarn dev
+yarn install
 ```
 
 First, run the development server:
