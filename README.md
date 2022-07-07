@@ -26,6 +26,7 @@ Open [http://localhost:3000](~http://localhost:3000~) with your browser to see t
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
 ## Technical Test
+### First part
 You can choose between two exercices :
 
 1 - Wishlist implementation :
@@ -41,6 +42,12 @@ You can choose between two exercices :
 
 #### Remember this is a frontend job offer, pay attention to UI and UX.
 #### We’ve left some UI mistakes, find them and fix them 🙂
+
+### Second part
+You have to reproduce this component :
+![Blissim home component](/public/static/images/blissim-component.png "Blisism home component")
+You can choose similar fonts and the image is available in the public folder.
+You can positioned the component on the homepage instead of the "lorem" text.
 
 ## Learn More
 
