@@ -1,32 +1,33 @@
-import Header from './header/Header'
-import Footer from './footer/Footer'
-import Interstitial from './Interstitial'
-import { withStyles } from '@material-ui/core'
+import React from "react";
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
+import Interstitial from "./Interstitial";
+import { withStyles } from "@material-ui/core";
 
 // ===== Basic Layout ===== //
-const useStyles = (theme) => ({
-    root: {
-        minHeight: "100vh",
-    },
+const useStyles = () => ({
+  root: {
+    minHeight: "100vh",
+  },
+  main: { minHeight: "84vh" },
 });
 
-const  DefaultLayout = (props) => {
-    const {classes} = props
-    return (
-        
-            <div className={classes.root}>
+const DefaultLayout = (props) => {
+  const { classes } = props;
 
-                {/*Header*/}
-                <Header/>
+  return (
+    <>
+      <div className={classes.root}>
+        <Header />
 
-                <main>
-                    {props.children}
-                </main>
+        <main className={classes.main}>{props.children}</main>
 
-                {/*Footer*/}
-                <Footer/>
-            </div>
-    )
-}
+        <Footer />
+      </div>
 
-export default withStyles(useStyles)(DefaultLayout)
+      <Interstitial />
+    </>
+  );
+};
+
+export default withStyles(useStyles)(DefaultLayout);
